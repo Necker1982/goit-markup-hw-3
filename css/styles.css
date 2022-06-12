@@ -142,7 +142,9 @@ img {
 } */
 /* -----------------------------------------------Hero------------------------------ */
 .hero {
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding: 200px 0;
     text-align: center;
     background-color: #2F303A;
 }
@@ -214,16 +216,17 @@ img {
     margin-bottom: 10px;
 }
 
-.feateres-list {
+.features-list {
     list-style: none;
     display: flex;
     gap: 30px;
 
 }
-.feateres-item {
+.features-item {
     width: 270px;
+    
 }
-.featers-item:not(:last-child) {
+.features-item:not(:last-child) {
     padding-right: 60px;
 }
 .features-text {
@@ -272,10 +275,9 @@ img {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
-
+    margin-bottom: 50px;
     color: var(--prime-color);
-    margin: 50px;
+   
 }
 
 .team-list {
@@ -303,7 +305,7 @@ img {
     line-height: 1.19;
     text-align: center;
     color: var(--prime-color);
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -318,6 +320,7 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 
 address {
     font-style: normal;
@@ -347,74 +350,89 @@ address {
 }
 
 footer .logo {
-    color: #FFFFFF;
+        text-decoration: none;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: #FFFFFF;
 }
 
 /* =================================================Portfolio--------------------------- */
+
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .portfolio-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--prime-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--prime-color);
 }
 
 .portfolio-text {
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color);
-
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
 
 .portfolio-list {
-        padding-left: 0;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
-        margin-top: -30px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.portfolio-cards {
-    flex-basis: calc((100% - 90px) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.portfolio-items {
-    padding: 20px 24px;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-}
-.filter-list {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    margin-bottom: 50px;
-    justify-content: center;
-}
-.filter-btn {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--prime-color);
-    border-radius: 4px;
-    border: none;
 
-    cursor: pointer;
-    padding: 6px 22px;
+.portfolio-cards {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-items {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.filter-list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--prime-color);
+  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+  padding: 6px 22px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-    color: #ffffff;
-    background: #2196F3;
+  color: #ffffff;
+  background: #2196f3;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
